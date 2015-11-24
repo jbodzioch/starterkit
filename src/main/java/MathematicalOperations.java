@@ -1,5 +1,3 @@
-import java.nio.charset.MalformedInputException;
-
 /**
  * Created by ldrygala on 2015-11-20.
  */
