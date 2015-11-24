@@ -21,7 +21,7 @@ public class MathematicalOperationsTest {
 	}
 
 	@Test
-	public void testShouldReturnMinusTwoTwoWhenAddingMinusOneAndMinusOne() {
+	public void testShouldReturnMinusTwoWhenAddingMinusOneAndMinusOne() {
 		// given
 		MathematicalOperations sumOperation = new MathematicalOperations();
 		// when
@@ -33,7 +33,7 @@ public class MathematicalOperationsTest {
 	}
 
 	@Test
-	public void testShouldReturnThreeWhenAddingToZero() {
+	public void testShouldReturnThreeWhenAddingThreeToZero() {
 		// given
 		MathematicalOperations sumOperation = new MathematicalOperations();
 		// when
