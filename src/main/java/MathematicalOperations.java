@@ -3,7 +3,7 @@
  */
 public class MathematicalOperations {
 	
-	public int substraction(int minuend, int subtrahend) {
+	public int subtraction(int minuend, int subtrahend) {
 		return minuend - subtrahend;
 	}
 

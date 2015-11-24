@@ -9,41 +9,41 @@ import org.junit.Test;
 public class MathematicalOperationsTest {
 	
 	@Test
-	public void shouldReturnNullWhenSubstractNullAndNull() {
+	public void shouldReturnNullWhenSubtractNullAndNull() {
 		// given
 		MathematicalOperations subOperation = new MathematicalOperations();
 		// when
-		int subOperationResult = subOperation.substraction(0,0);
+		int subOperationResult = subOperation.subtraction(0,0);
 		// then
 		assertEquals(0, subOperationResult);
 	}
 	
 	@Test
-	public void shouldReturnEightWhenSubstractTenandTwo() {
+	public void shouldReturnEightWhenSubtractTenAndTwo() {
 		// given
 		MathematicalOperations subOperation = new MathematicalOperations();
 		// when
-		int subOperationResult = subOperation.substraction(10,2);
+		int subOperationResult = subOperation.subtraction(10,2);
 		// then
 		assertEquals(8, subOperationResult);
 	}
 	
 	@Test
-	public void shouldReturnNegativeFiveWhenSubstractNullAndFive() {
+	public void shouldReturnNegativeFiveWhenSubtractNullAndFive() {
 		// given
 		MathematicalOperations subOperation = new MathematicalOperations();
 		// when
-		int subOperationResult = subOperation.substraction(0,5);
+		int subOperationResult = subOperation.subtraction(0,5);
 		// then
 		assertEquals(-5, subOperationResult);
 	}
 	
 	@Test
-	public void shouldReturnNegativeTwentyWhenSubstractNegativeTenAndTen() {
+	public void shouldReturnNegativeTwentyWhenSubtractNegativeTenAndTen() {
 		// given
 		MathematicalOperations subOperation = new MathematicalOperations();
 		// when
-		int subOperationResult = subOperation.substraction(-10,10);
+		int subOperationResult = subOperation.subtraction(-10,10);
 		// then
 		assertEquals(-20, subOperationResult);
 	}
