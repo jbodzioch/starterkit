@@ -8,7 +8,7 @@ import org.junit.Test;
 public class MathematicalOperationsTest {
 
 	@Test
-	public void testShouldReturnTwoWhenAddindOneAndOne() {
+	public void testShouldReturnTwoWhenAddingOneAndOne() {
 		// given
 		MathematicalOperations sumOperation = new MathematicalOperations();
 		// when
@@ -18,5 +18,29 @@ public class MathematicalOperationsTest {
 		// then
 		assertEquals(2, sumOperationResult);
 
+	}
+
+	@Test
+	public void testShouldReturnMinusTwoTwoWhenAddingMinusOneAndMinusOne() {
+		// given
+		MathematicalOperations sumOperation = new MathematicalOperations();
+		// when
+		int a = -1;
+		int b = -1;
+		int sumOperationResult = sumOperation.sum(a, b);
+		// then
+		assertEquals(-2, sumOperationResult);
+	}
+
+	@Test
+	public void testShouldReturnThreeWhenAddingToZero() {
+		// given
+		MathematicalOperations sumOperation = new MathematicalOperations();
+		// when
+		int a = 3;
+		int b = 0;
+		int sumOperationResult = sumOperation.sum(a, b);
+		// then
+		assertEquals(3, sumOperationResult);
 	}
 }
