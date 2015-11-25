@@ -10,4 +10,9 @@ public class MathematicalOperations {
 	public int exponentiation(int value, int power){
 		return (int) Math.pow(value, power);
 	}
+	
+	public int subtraction(int minuend, int subtrahend) {
+		return minuend - subtrahend;
+	}
+	
 }
