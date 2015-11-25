@@ -163,4 +163,49 @@ public class MathematicalOperationsTest {
 		// then
 		assertEquals(-20, subOperationResult);
 	}
+	@Test
+	public void shouldReturnNullForNotNaturalNumber() {
+		//given
+		Integer expectedResult = null;
+		Integer number = -1;
+		MathematicalOperations calculator = new MathematicalOperations();
+		//when
+		Integer result = calculator.calculateFactorial(number);
+		//then
+		assertEquals(expectedResult, result);
+	}
+	@Test
+	public void shouldReturn1For0() {
+		//given
+		Integer expectedResult = 1;
+		Integer number = 0;
+		MathematicalOperations calculator = new MathematicalOperations();
+		//when
+		Integer result = calculator.calculateFactorial(number);
+		//then
+		assertEquals(expectedResult, result);
+	}
+	@Test
+	public void shouldReturn1For1() {
+		//given
+		Integer expectedResult = 1;
+		Integer number = 1;
+		MathematicalOperations calculator = new MathematicalOperations();
+		//when
+		Integer result = calculator.calculateFactorial(number);
+		//then
+		assertEquals(expectedResult, result);
+	}
+	@Test
+	public void shouldReturn720For6() {
+		//given
+		Integer expectedResult = 720;
+		Integer number = 6;
+		MathematicalOperations calculator = new MathematicalOperations();
+		//when
+		Integer result = calculator.calculateFactorial(number);
+		//then
+		assertEquals(expectedResult, result);
+	}
+
 }
