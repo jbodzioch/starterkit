@@ -33,4 +33,8 @@ public class MathematicalOperations {
 		return result;
 	}
 	
+	public long multiplyIntegers(int multiplicand, int multiplier){
+		return (long) multiplicand*multiplier;
+	}
+	
 }
